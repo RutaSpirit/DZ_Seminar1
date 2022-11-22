@@ -1,10 +1,10 @@
-﻿//Напишите программу, которая на вход принимает число и выдает его квадрат(число, умноженное на само себя)
+﻿//Напишите программу, которая на вход принимает число(N), а на выходе показывает все четные числа от 1 до N
 Console.Clear();
-Console.Write("Введите 1-ое число: ");
-int n = Convert.ToInt32(Console.ReadLine()); // ввод чисел
-Console.Write("Введите 2-ое число: ");
-int m = Convert.ToInt32(Console.ReadLine()); // ввод чисел
-if (m * m == n)
-    Console.Write("yes");
-else
-    Console.Write("no");
+Console.Write("Введите число: ");
+int n = Convert.ToInt32(Console.ReadLine()); 
+int i = 2;
+while (i > 1 && i <= n )
+{
+    Console.Write($"{i} ");
+    i = i + 2; 
+}
