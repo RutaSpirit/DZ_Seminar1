@@ -1,10 +1,9 @@
-﻿//Напишите программу, которая на вход принимает два числа, и выдает, какое число большее, а какое меньшее
-Console.Clear();
-Console.Write("Введите число: ");
-int n = Convert.ToInt32(Console.ReadLine());
-
-
-if (n % 2 == 0)
-    Console.Write("yes");
-else
-    Console.Write("no");
+﻿Console.Clear();
+int n = new Random().Next(10, 100);
+Console.Write($"Случайное число: {n}");
+int n1 = n / 10;
+int n2 = n % 10;
+if (n1 > n2)
+    Console.Write(n1);
+else 
+    Console.Write(n2);
